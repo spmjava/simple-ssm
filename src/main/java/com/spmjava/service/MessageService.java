@@ -1,6 +1,6 @@
 package com.spmjava.service;
 
-import com.spmjava.commons.OperationResult;
+import com.spmjava.commons.bean.OperationResult;
 
 /**
  * @author qi-wei-chao
@@ -18,5 +18,7 @@ public interface MessageService {
      * @return
      */
     OperationResult sendMail(String to, String subject, String htmlText);
+
+    OperationResult sendSms();
 
 }
